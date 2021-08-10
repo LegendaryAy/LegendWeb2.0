@@ -1,0 +1,415 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width: 800px) {
+    .mobile-container {
+        width: 90% !important;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    width:100%;
+}
+/*--------------------------------------------------------------
+  # Navbar
+  --------------------------------------------------------------*/
+#header {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+}
+
+@media(max-width: 800px) {
+    #header {
+        position: absolute;
+    }
+}
+
+.bg {
+    background-color: transparent;
+}
+
+.header-scrolled {
+    background: rgba(25, 28, 31, 0.8);
+}
+
+.navbar {
+    height: 10%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #FFFFFC;
+}
+
+.home-name {
+    font-size: 20px;
+    font-family: 'Playball', cursive;
+    color: #FFFFFC;
+}
+
+    .home-name:hover {
+        color: #FFFFFC;
+        text-decoration: none;
+    }
+
+.nav-item {
+    margin: 4px 10px;
+}
+
+.nav-link {
+    color: #FFFFFC;
+}
+
+    .nav-link:hover {
+        background-color:#3b434a;
+        color: #FFFFFC;
+        text-decoration: none;
+    }
+/*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/3.jpg") top left;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+    #hero:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.75);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #hero .hero-container {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    #hero h1 {
+        margin: 100px 0 5px 0;
+        font-size: 64px;
+        font-weight: 700;
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+    }
+
+    #hero h2 {
+        color: #eee;
+        margin-bottom: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    #hero .hero-btn {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 12px 40px;
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        background: #222327;
+    }
+
+        #hero .hero-btn:hover {
+            text-decoration: none;
+            background: #3b434a;
+        }
+
+@media (max-width:800px) {
+    #hero {
+        background: url("../images/3.jpg") top center;
+        background-size: cover;
+        width: 100%;
+    }
+
+        #hero h1 {
+            font-size: 32px;
+        }
+
+        #hero h2 {
+            font-size: 10px;
+        }
+}
+/*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+.about{
+    margin-top: 70px;
+}
+.section-bg {
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        color: #3b434a;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section-title p {
+        margin-bottom: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+
+.about .image {
+    background: url("../images/4.jpg") top center no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+.about h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #3b434a;
+    text-transform: uppercase;
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+    .about .content ul li {
+        padding-bottom: 20px;
+    }
+
+    .about .content ul i {
+        font-size: 20px;
+        padding-right: 2px;
+        color: #26537a;
+    }
+
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+.about .content p{
+    line-height: 1.8rem;
+}
+.resume-btn {
+    margin-left: 200px;
+    letter-spacing: 1px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    background: #222327;
+}
+.resume-btn:hover{
+    background:#3b434a;
+}
+
+@media (max-width: 800px) {
+    .about {
+        margin-top:10px;
+        padding: 7px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .section-title span {
+        font-size: 38px;
+    }
+    .about h3{
+        font-size: 17px;
+    }
+    .about .content ul li {
+        padding-bottom: 5px;
+    }
+    .resume-btn{
+        width: 100%;
+        margin: 0% auto;
+    }
+}
+
+/*--------------------------------------------------------------
+  # Services
+  --------------------------------------------------------------*/
+.services{
+   margin-top: 150px
+}
+.services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.services .icon {
+    margin: 0 auto 20px auto;
+    padding-top: 17px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: #fff4df;
+}
+
+    .services .icon img {
+        width: 100%;
+        height: 20vh;
+    }
+
+.services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+    .services .title a {
+        color: #111;
+        transition: 0.3s;
+    }
+
+.services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+    border-color: #3b434a;
+}
+
+    .services .icon-box:hover .title a {
+        color: #3b434a;
+    }
+
+@media (max-width: 800px) {
+    .services {
+        margin-top: 60px
+    }
+}
+/*--------------------------------------------------------------
+  # Skills
+--------------------------------------------------------------*/
+    .skills {
+        margin-top: 150px;        
+    }
+        .skill progress {
+            display: block;
+            width: 100%;
+            height: 15px;
+            border: none;
+            background-color: #fff;
+        }
+
+    progress::-webkit-progress-bar {
+        background-color: #ddd;
+    }
+
+    progress::-webkit-progress-value {
+        background-color: #26537a;
+    }
+
+    progress::-moz-progress-bar {
+        background-color: #26537a;
+    }
+@media (max-width: 800px) {
+    .skills {
+        margin-top: 20px;
+    }
+}
+/*--------------------------------------------------------------
+  # Projects
+--------------------------------------------------------------*/
+    #projects {
+        margin-top: 150px;
+    }
+
+        #projects img {
+            width: 100%;
+            height: 30vh;
+            filter: grayscale(100%);
+        }
+
+            #projects img:hover {
+                cursor: pointer;
+                filter: grayscale(0%);
+                transition: all ease-in 0.6s;
+            }
+
+
+    .works {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;        
+    }
+
+    .card {
+        width: 100%;
+        margin: 30px 0px;
+        box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+        border: none;
+    }
+
+
+    .github {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+    #projects .btn {
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 40px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin-top: 30px;
+        color: #fff;
+        background: #222327;
+    }
+
+        #projects .btn:hover {
+            color: #f1f1f1;
+            background-color: #3b434a;
+        }
+@media (max-width: 800px) {
+    #projects {
+        margin-top: 50px;
+    }
+}
