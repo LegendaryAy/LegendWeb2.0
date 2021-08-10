@@ -126,14 +126,14 @@
                 {
                     <div class="col-lg-6">
                         <div class="skill">
-                            <label asp-for="@Model.Skills[i].Name">@Model.Skills[i].Name: <span style="color: #26537a;">@Model.Skills[i].Progress%</span></label>
-                            <progress value=@Model.Skills[i].Progress max="100"> @Model.Skills[i].Progress% </progress>
+                            <label asp-for="@Model.Skills[i].Name">@Model.Skills[i].Name:</label>
+                            <progress value=@Model.Skills[i].Progress max="100"> @Model.Skills[i].Progress% </progress> <span>@Model.Skills[i].Progress%</span>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="skill">
-                            <label asp-for="@Model.Skills[i+3].Name">@Model.Skills[i + 3].Name: <span style="color: #26537a;">@Model.Skills[i + 3].Progress%</span></label>
-                            <progress value=@Model.Skills[i+3].Progress max="100"> @Model.Skills[i + 3].Progress% </progress>
+                            <label asp-for="@Model.Skills[i+3].Name">@Model.Skills[i + 3].Name: </label>
+                            <progress value=@Model.Skills[i+3].Progress max="100"> @Model.Skills[i + 3].Progress% </progress> <span>@Model.Skills[i + 3].Progress%</span>
                         </div>
                     </div>
                 }
