@@ -129,7 +129,6 @@ body {
         padding: 12px 40px;
         border: none;
         border-radius: 50px;
-        color: #fff;
         background: #222327;
     }
 
@@ -137,6 +136,11 @@ body {
             text-decoration: none;
             background: #3b434a;
         }
+
+.hero-btn a {
+    text-decoration: none;
+    color: #fff;
+}
 
 @media (max-width:800px) {
     #hero {
