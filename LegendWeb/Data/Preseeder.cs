@@ -77,7 +77,7 @@ namespace LegendWeb.Data
             var c = new Projects { Name = "LegendHealth", Body = "An Health website template showing different means of achieving good health", ImageUrl = "images/work3.png", Url = "https://legendaryay.github.io/LegendHealth/", UserId = "1" };
             var d = new Projects { Name = "Password Generator", Body = "A Javascript application that creates random passwords", ImageUrl = "images/work1.png", Url = "https://legendaryay.github.io/PasswordGenerator/", UserId = "1" };
             var e = new Projects { Name = "ContactMangerAPI", Body = "A RESTful API for managing contacts", ImageUrl = "images/work5.png", Url = "https://github.com/LegendaryAy/ContactManagerApi", UserId = "1" };
-            var f = new Projects { Name = "LegendBank", Body = "A simple Bank application that perorms basic transactions", ImageUrl = "images/work6.png", Url = "https://github.com/LegendaryAy/LegendBank", UserId = "1" };
+            var f = new Projects { Name = "LegendBank", Body = "A simple Bank application that performs basic transactions", ImageUrl = "images/work6.png", Url = "https://github.com/LegendaryAy/LegendBank", UserId = "1" };
             var projects = new List<Projects> { a, b, c, d, e, f };
             foreach (var item in projects)
             {
