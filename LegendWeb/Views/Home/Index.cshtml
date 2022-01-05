@@ -43,33 +43,12 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Button trigger modal -->
-                <button type="button" class="resume-btn" data-toggle="modal" data-target="#exampleModalLong">
-                    Check My Resume
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalLong" tabindex="1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+
+             <!-- Button -->
+                <a href="https://docs.google.com/document/d/1Lm1A2IERudDjpOEymsfB0NipMHnGwMu7/edit?usp=sharing&ouid=103583238599733273549&rtpof=true&sd=true" target="_blank" class="resume-btn">
+                    Check My Resume
+                </a>
         </div>
 
     </div>
@@ -121,23 +100,20 @@
             <p>Here are a couple of programming languages and technologies i use in providing efficient software solutions</p>
         </div>
         <div class="prog-skills">
-            <div class="row">
-                @for (int i = 0; i < Model.Skills.Count / 2; i++)
-                {
-                    <div class="col-lg-6">
-                        <div class="skill">
-                            <label asp-for="@Model.Skills[i].Name">@Model.Skills[i].Name:</label>
-                            <progress value=@Model.Skills[i].Progress max="100"> @Model.Skills[i].Progress% </progress> <span>@Model.Skills[i].Progress%</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="skill">
-                            <label asp-for="@Model.Skills[i+3].Name">@Model.Skills[i + 3].Name: </label>
-                            <progress value=@Model.Skills[i+3].Progress max="100"> @Model.Skills[i + 3].Progress% </progress> <span>@Model.Skills[i + 3].Progress%</span>
-                        </div>
-                    </div>
-                }
-            </div>
+            <img src="~/images/html.png" alt="Html" />
+            <img src="~/images/css.png" alt="Css" />
+            <img src="~/images/javascript.png" alt="JavaScript" />
+            <img src="~/images/C-sharp.png" alt="C#" />
+            <img src="~/images/NET_Core_Logo.png" alt=".Net" />
+            <img src="~/images/microsoft_sql_server.png" alt="MSSQL" />
+            <img src="~/images/Bootstrap.png" alt="Bootstrap" />
+            <img src="~/images/react.png" alt="React" />
+            <img src="~/images/PHP.png" alt="php" />
+            <img src="~/images/mysql.png" alt="mySql" />
+            <img src="~/images/sass.png" alt="Sass" />
+            <img src="~/images/docker.png" alt="docker" />
+            <img src="~/images/Azure.png" alt="Azure" />
+            <img src="~/images/github.png" alt="github" />
         </div>
     </div>
 

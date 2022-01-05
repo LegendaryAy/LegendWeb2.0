@@ -2,14 +2,16 @@
 using LegendWeb.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LegendWeb.Migrations
 {
     [DbContext(typeof(LegendDbContext))]
-    partial class LegendDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220104094221_newProjects")]
+    partial class newProjects
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

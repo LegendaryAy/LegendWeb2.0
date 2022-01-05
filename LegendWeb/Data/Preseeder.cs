@@ -48,7 +48,7 @@ namespace LegendWeb.Data
         {
             var address = new Address
             {
-                Street = "No 8, Alaba Obe Street, Off Ajuwon Road",
+                Street = "2013, Adunni Oluwole Loop, Fara park 2 Estate, Lekki-Epe Expressway",
                 City = "Lagos",
                 Country = "Nigeria",
                 UserId = "1"
@@ -73,8 +73,8 @@ namespace LegendWeb.Data
         private static void SeedProjects(ModelBuilder builder)
         {
             var a = new Projects { Name = "Livestock247 Web App", Body = "An online marketplace for livestocks integrated with  payment gateway", ImageUrl = "images/work4.png", Url = "http://livestockfarms.herokuapp.com/", UserId = "1" };
-            var b = new Projects { Name = "LegendTravels", Body = "A Travel website template showing different cities and means to travel", ImageUrl = "images/work2.png", Url = "https://legendaryay.github.io/LegendTravels/", UserId = "1" };
-            var c = new Projects { Name = "LegendHealth", Body = "An Health website template showing different means of achieving good health", ImageUrl = "images/work3.png", Url = "https://legendaryay.github.io/LegendHealth/", UserId = "1" };
+            var b = new Projects { Name = "PlentyTechJobs", Body = "PlentyTechJobs is the one platform for finding the best technology jobs", ImageUrl = "images/PTJ.png", Url = "https://plentytechjobs.africa", UserId = "1" };
+            var c = new Projects { Name = "Omney", Body = "Omney is an application that will let users buy and sell stocks", ImageUrl = "images/Omney.png", Url= "http://legendary-ay.herokuapp.com/", UserId = "1" };
             var d = new Projects { Name = "Password Generator", Body = "A Javascript application that creates random passwords", ImageUrl = "images/work1.png", Url = "https://legendaryay.github.io/PasswordGenerator/", UserId = "1" };
             var e = new Projects { Name = "ContactMangerAPI", Body = "A RESTful API for managing contacts", ImageUrl = "images/work5.png", Url = "https://github.com/LegendaryAy/ContactManagerApi", UserId = "1" };
             var f = new Projects { Name = "LegendBank", Body = "A simple Bank application that performs basic transactions", ImageUrl = "images/work6.png", Url = "https://github.com/LegendaryAy/LegendBank", UserId = "1" };

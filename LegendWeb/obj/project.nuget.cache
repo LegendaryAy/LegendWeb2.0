@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ekKzuWNFaQ5/uR8xN2IQ11dGYr4AvS+UBZCieYusx+juJv5uJ9of23LJXJlI4Ldstxbzzt1BL9ZRvpEF2bAf5A==",
+  "dgSpecHash": "hGi3Fos0xUriRtXp68uAjzmLKsUT7TSZzzcrEFjn9ayYCyU0GVDzbzor0Sw0h2ZmMfMEr7azF6OK2xYJMaUTyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\Documents\\Projects\\C#\\LegendWeb2.0\\LegendWeb\\LegendWeb.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\hp\\.nuget\\packages\\nlog\\4.7.10\\nlog.4.7.10.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\nlog.extensions.logging\\1.7.3\\nlog.extensions.logging.1.7.3.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\nlog.web.aspnetcore\\4.13.0\\nlog.web.aspnetcore.4.13.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",

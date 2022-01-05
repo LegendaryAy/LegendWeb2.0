@@ -6,6 +6,25 @@
 <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
 
+        @if (!string.IsNullOrEmpty(ViewBag.MessageSuccess))
+        {
+            <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+                @ViewBag.MessageSuccess
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(ViewBag.MessageError))
+        {
+            <div class="alert alert-danger alert-dismissible fade show mt-4" role="alert">
+                @ViewBag.MessageError
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
         <div class="section-title">
             <h2>Contact</h2>
             <div class="underline"></div>
@@ -13,7 +32,7 @@
         </div>
 
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.375479696933!2d3.6280712140295335!3d6.474033295316586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf97abff1bf25%3A0x5e89106007f10176!2sDecagon%20Institute%20(Sangotedo%20Campus)!5e0!3m2!1sen!2sng!4v1621195396634!5m2!1sen!2sng" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.533744870441!2d3.6494506146870407!3d6.453844895330915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf96d5e8fd135%3A0xa3e611999f09c3b!2sFara%20Park%202%20estate!5e0!3m2!1sen!2sng!4v1641285643877!5m2!1sen!2sng" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <div class="row mt-5 mb-5 display">
@@ -44,23 +63,23 @@
 
             <div class="col-lg-8 mt-5 mt-lg-0">
 
-                <form method="post" role="form" class="email-form" asp-action="Form" asp-controller="Contact">
+                <form method="post" role="form" class="email-form" asp-action="Details" asp-controller="Contact">
                     <div class="form-row">
                         <div class="col-md-6 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" />
+                            <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" />
                             <div class="validate"></div>
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" />
+                            <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" />
                             <div class="validate"></div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                        <input type="text" class="form-control" name="Subject" id="subject" placeholder="Subject" />
                         <div class="validate"></div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                        <textarea class="form-control" name="Body" rows="5" placeholder="Message"></textarea>
                         <div class="validate"></div>
                     </div>
                     <div class="text-center"><button type="submit">Send Message</button></div>
