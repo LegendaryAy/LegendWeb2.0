@@ -33,7 +33,7 @@ namespace LegendWeb.Data
                 ImageThumbNailUrl = "images/2.jpg",
                 Bio = "With experience in developing scalable applications, I am highly proficient and committed to building innovative software applications. I’m in tune with the latest technological trends and I use them to build efficient software applications.",
                 Description = "I am a Software Engineer from Lagos",
-                DateOfBirth = "17th of Semptember",
+                DateOfBirth = "17th of September",
                 Degree = "Proficient",
                 WorkStatus = "Available",
                 Education = "B.Sc (Hons) Biochemistry, Obafemi Awolowo University",
