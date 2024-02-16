@@ -1,5 +1,6 @@
 ﻿using LegendWeb.Models;
 using LegendWeb.Models.Services.Interfaces;
+using LegendWeb.Services.Interfaces;
 using LegendWeb.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -20,14 +21,18 @@ namespace LegendWeb.Controllers
         private readonly ISkillsRepository _skillRepo;
         private readonly IProjectsRepository _projectsRepo;
         private readonly IAddressRepository _addressRepo;
+        private readonly ICertificationRepository _certRepo;
+        private readonly IExperienceRepository _experienceRepo;
 
-        public HomeController(ILogger<HomeController> logger, IUserRepository userRepo, ISkillsRepository skillRepo, IProjectsRepository projectsRepo, IAddressRepository addressRepo)
+        public HomeController(ILogger<HomeController> logger, IUserRepository userRepo, ISkillsRepository skillRepo, IProjectsRepository projectsRepo, IAddressRepository addressRepo, ICertificationRepository certRepo, IExperienceRepository experienceRepo)
         {
             _logger = logger;
             _userRepo = userRepo;
             _skillRepo = skillRepo;
             _projectsRepo = projectsRepo;
             _addressRepo = addressRepo;
+            _certRepo = certRepo;
+            _experienceRepo = experienceRepo;
         }
 
         [HttpGet]
@@ -53,7 +58,9 @@ namespace LegendWeb.Controllers
                 Job = user.JobTitle,
                 City = $"{address.City}, {address.Country}",
                 Skills = _skillRepo.GetSkills("1"),
-                Projects = _projectsRepo.GetProjects("1")
+                Projects = _projectsRepo.GetProjects("1"),
+                Certifications = _certRepo.GetCerts("1"),
+                Experiences = _experienceRepo.GetExp("1")
             };
             return View(model);
         }

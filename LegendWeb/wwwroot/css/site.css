@@ -193,7 +193,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 .about .image {
-    background: url("../images/4.jpg") top center no-repeat;
+    background: url("../images/AyM.jpg") top center no-repeat;
     background-size: cover;
     min-height: 300px;
 }
@@ -332,6 +332,43 @@ h1,h2,h3,h4,h5,h6{
         padding-bottom: 30px
     }
 }
+
+/*--------------------------------------------------------------
+  # Experience
+  --------------------------------------------------------------*/
+.exp {
+    padding: 50px 0px 100px;
+    background: #ECF0F1;
+}
+.exp-head {
+    display: flex;
+    padding: 30px 20px 10px;
+}
+    .exp-head img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        border-radius: 50%;
+        border: 1px #ECF0F1 solid;
+    }
+
+.exp-head p {
+    margin: 10px 0px 0px 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+    .exp-head p span {
+        color: #0B3954;
+    }
+    ul.exp-ul {
+        padding: 0px 20px 20px 90px;
+        list-style-type: circle !important;
+    }
+.exp-list {
+    font-size: 15px;
+    line-height: 28px;
+    list-style-type: circle !important;
+}
 /*--------------------------------------------------------------
   # Skills
 --------------------------------------------------------------*/
@@ -340,9 +377,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 30px 0px 100px;
     background: #fff5e6;
 }
-.prog-skills{
+.prog-skills {
     width: 80%;
-    margin: 0px auto;    
+    margin: 0px auto;
+    padding: 0px 0px 0px 30px;
 }
 .prog-skills img {
     width: 70px;
@@ -358,7 +396,7 @@ h1,h2,h3,h4,h5,h6{
     }
 @media (max-width: 800px) {
     .skills {
-        padding: 20px 0px 60px;
+        padding: 20px 0px 60px 20px;
     }
     .prog-skills{
         width: 82%;
@@ -420,9 +458,18 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*--------------------------------------------------------------
+  # Certifications
+--------------------------------------------------------------*/
+.cert {
+    background: #FFF8F0;
+    padding: 50px 0px 80px;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {    
+#footer {  
+    margin-top: -16px;
     background: url("../images/bg.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;

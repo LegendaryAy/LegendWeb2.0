@@ -26,5 +26,7 @@ namespace LegendWeb.ViewModels
             public string ImageUrl { get; set; }
             public List<Skills> Skills { get; set; }
             public List<Projects> Projects { get; set; }
+            public List<Certification> Certifications { get; set; }
+            public List<Experience> Experiences { get; set; }
     }
 }

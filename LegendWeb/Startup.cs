@@ -1,6 +1,8 @@
 using LegendWeb.Data;
 using LegendWeb.Models.Services.Implementations;
 using LegendWeb.Models.Services.Interfaces;
+using LegendWeb.Services.Implementations;
+using LegendWeb.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +34,8 @@ namespace LegendWeb
             services.AddScoped<IAddressRepository, AddressRepository>();
             services.AddScoped<ISkillsRepository, SkillsRepository>();
             services.AddScoped<IProjectsRepository, ProjectsRepository>();
+            services.AddScoped<ICertificationRepository, CertificationRepository>();
+            services.AddScoped<IExperienceRepository, ExperienceRepository>();
             services.AddDbContextPool<LegendDbContext>(option => option.UseSqlite(Configuration.GetConnectionString("default")));
         }
 

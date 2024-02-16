@@ -18,6 +18,9 @@ namespace LegendWeb.Data
         public DbSet<Contact> Contact { get; set; }
         public DbSet<Skills> Skills { get; set; }
         public DbSet<Projects> Projects { get; set; }
+        public DbSet<Experience> Experiences { get; set; }
+        public DbSet<ExpDescription> ExpDescription { get; set; }
+        public DbSet<Certification> Certifications { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

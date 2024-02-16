@@ -5,7 +5,7 @@
 <section id="hero">
     <div class="hero-container">
         <h1 class="animate__animated animate__backInDown">Ayobami Fadeni</h1>
-        <h2 class="animate__animated animate__backInLeft animate__delay-1s">I'm a FullStack Software Developer </h2>
+        <h2 class="animate__animated animate__backInLeft animate__delay-1s">I'm a Senior FullStack Software Engineer </h2>
         <a href="#about" class="hero-btn animate__animated animate__fadeIn animate__delay-2s"> More </a>
     </div>
 </section><!-- End Hero -->
@@ -15,7 +15,8 @@
         <div class="section-title">
             <h2>About</h2>
             <div class="underline"></div>
-            <p class="text-lg-center">This is a brief summary about me. It contains basic information about myself, the services I offer and projects done</p>
+            <p class="text-lg-center font-italic">"A good programmer is someone who always looks both ways before crossing a one-way street"</p>
+            <p>- Doug Linder</p>
         </div>
 
         <div class="row">
@@ -45,10 +46,10 @@
                 </div>
             </div>
 
-             <!-- Button -->
-                <a href="https://docs.google.com/document/d/1Lm1A2IERudDjpOEymsfB0NipMHnGwMu7/edit?usp=sharing&ouid=103583238599733273549&rtpof=true&sd=true" target="_blank" class="resume-btn">
-                    Check My Resume
-                </a>
+            <!-- Button -->
+            <a href="https://docs.google.com/document/d/1Lm1A2IERudDjpOEymsfB0NipMHnGwMu7/edit?usp=sharing&ouid=103583238599733273549&rtpof=true&sd=true" target="_blank" class="resume-btn">
+                Check My Resume
+            </a>
         </div>
 
     </div>
@@ -59,31 +60,32 @@
 
         <div class="section-title">
             <h2>My Services</h2>
-            <p>Here are the services I provide</p>
+            <p class="text-lg-center font-italic">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."</p>
+            <p>- Martin Fowler</p>
         </div>
 
         <div class="row">
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div class="icon-box">
                     <div class="icon"><img src="~/images/dev.svg" alt="web-dev"></div>
-                    <h4 class="title">Web Development</h4>
-                    <p class="description">I am skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Aspiring to combine broad background with strong technical skills to excel as a Fullstack Developer.</p>
+                    <h4 class="title">Backend Development</h4>
+                    <p class="description">Whether it's developing enterprise APIs with C# ASP.NET Web API Core, crafting lightweight services with Node.js and Express.js, or building modular applications with Nest.js, I am committed to delivering high-quality backend solutions that drive business growth and enhance user experiences.</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div class="icon-box">
                     <div class="icon"><img src="~/images/product.svg" alt="product"></div>
-                    <h4 class="title">Product Management</h4>
-                    <p class="description">I come up with creative strageties and marketing plans to launch any kind of product. I follow Agile methodologies in my process of managing the product</p>
+                    <h4 class="title">Frontend Development</h4>
+                    <p class="description">You'll find examples of my frontend projects below showcasing my proficiency in HTML, CSS, Sass, React, and jQuery. From sleek and intuitive user interfaces to dynamic and interactive web applications, I am dedicated to delivering high-quality frontend solutions that meet client requirements and exceed user expectations.</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div class="icon-box">
                     <div class="icon"><img src="~/images/content.svg" alt="content-dev"></div>
-                    <h4 class="title">Content Development</h4>
-                    <p class="description">I deliver audience captiving content of a range of topics such as technology, family, lifestyle, gaming and entertainment. I also use seo tools to make sure the content would be discovered by the target audience</p>
+                    <h4 class="title">Database Architeture and Management </h4>
+                    <p class="description">I have created multiple database architectures and implementations across different instances of MSSQL, MySQL, PostgreSQL, and MongoDB. From relational databases to NoSQL solutions, I am dedicated to designing and optimizing database systems that support the needs of diverse applications and drive business success</p>
                 </div>
             </div>
 
@@ -92,12 +94,42 @@
     </div>
 </section><!-- End My Services Section -->
 
+<section id="exp" class="exp">
+    <div class="container mobile-container" data-aos="fade-down" data-aos-once="true">
+
+        <div class="section-title">
+            <h2>Experience</h2>
+            <p class="text-lg-center font-italic">"Simplicity, carried to the extreme, becomes elegance"</p>
+            <p>- Jon Franklin</p>
+        </div>
+
+        @foreach (var exp in Model.Experiences)
+        {
+
+            <div class="card">
+                <div class="exp-head">
+                    <img src="@exp.Logo" alt="@exp.Company" />
+                    <p><span>@exp.Company</span>, @exp.Location  (@exp.Date)</p>
+
+                </div>
+                <ul class="exp-ul">
+                    @foreach (var i in exp.Description)
+                    {
+                        <li class="exp-list"><i class="fa fa-angle-double-right"></i>   @i.Description</li>
+                    }
+                </ul>
+            </div>
+        }
+
+    </div>
+</section><!-- End Experience Section -->
+
 <section id="skills" class="skills">
     <div class="container mobile-container" data-aos="fade-left" data-aos-once="true">
         <div class="section-title">
             <h2>Skills</h2>
-            <div class="underline"></div>
-            <p>Here are a couple of programming languages and technologies i use in providing efficient software solutions</p>
+            <p class="text-lg-center font-italic">"Before software should be reusable, it should be usable."</p>
+            <p>- Ralph Johnson</p>
         </div>
         <div class="prog-skills">
             <img src="~/images/html.png" alt="Html" />
@@ -110,6 +142,10 @@
             <img src="~/images/react.png" alt="React" />
             <img src="~/images/PHP.png" alt="php" />
             <img src="~/images/mysql.png" alt="mySql" />
+            <img src="~/images/posgres (2).png" alt="Posgres" />
+            <img src="~/images/node.png" alt="node" />
+            <img src="~/images/nestjs.png" alt="nest" />
+            <img src="~/images/mongodb.png" alt="mongodb" />
             <img src="~/images/sass.png" alt="Sass" />
             <img src="~/images/docker.png" alt="docker" />
             <img src="~/images/Azure.png" alt="Azure" />
@@ -117,14 +153,14 @@
         </div>
     </div>
 
-</section><!-- End Skills Section -->
+</section> <!-- End Skills Section -->
 
 <section id="projects" class="projects">
     <div class="container mobile-container" data-aos="fade-right" data-aos-once="true">
         <div class="section-title">
             <h2>Projects</h2>
-            <div class="underline"></div>
-            <p class="text-lg-center">Here are a couple of projects i worked on with their respective repository links.</p>
+            <p class="text-lg-center font-italic">"That’s the thing about people who think they hate computers. What they really hate is lousy programmers."</p>
+            <p>- Larry Niven</p>
         </div>
         <div class="works">
             @foreach (var project in Model.Projects)
@@ -142,4 +178,31 @@
         </div>
         <div class="github"><a href="https://github.com/LegendaryAy" class="btn">Check my Github Profile...</a></div>
     </div>
-</section><!-- End Projects Section -->
+</section>
+
+<!-- End Projects Section -->
+
+<section id="cert" class="cert">
+    <div class="container mobile-container" data-aos="fade-up" data-aos-once="true">
+        <div class="section-title">
+            <h2>Certifications</h2>
+            <p class="text-lg-center font-italic">"A computer once beat me at chess, but it was no match for me at kickboxing."</p>
+            <p>- Emo Philips</p>
+        </div>
+        <div class="works">
+            @foreach (var cert in Model.Certifications)
+            {
+                <div class="card" style="width: 22rem;">
+                    <img class="card-img-top" src=~/@cert.ImageUrl alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@cert.Name</h5>
+                        <p class="card-text">Issued By: @cert.Issuer</p>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+
+<!-- End Certification Section -->

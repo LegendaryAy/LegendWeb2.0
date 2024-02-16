@@ -19,6 +19,7 @@ namespace LegendWeb.Controllers
             _userRepo = userRepository;
             _addressRepo = addressRepository;
         }
+        
         [HttpGet]
         public IActionResult Details()
         {
